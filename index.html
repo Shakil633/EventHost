@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventHost</title>
+    <link
+      rel="shortcut icon"
+      href="https://i.ibb.co/1QYFZDW/icons8-event-management-80.png"
+      type="image/x-icon"
+    />
+
+    <!-- tailwindCss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .front {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+  </head>
+  <body class="front">
+    <div>
+      <!-- navbar section -->
+      <div
+        class="navbar bg-base-100 lg:max-w-6xl md:max-w-2xl max-w-sm bg-[#7542ff] md:px-10 px-5 mt-5 mx-auto z-20 rounded-3xl"
+      >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>Events</a></li>
+              <li><a>About us</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="font-medium text-xl text-white">EventHost</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a>Home</a></li>
+            <li><a>Events</a></li>
+            <li><a>About us</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex items-center gap-2">
+            <img src="https://i.ibb.co/XF9ypkZ/Ellipse-3.png" alt="" />
+            <img
+              class="w-6 h-6"
+              src="https://i.ibb.co/YDJdVN1/Group-7.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- banner section -->
+      <div class="mt-10 lg:max-w-6xl md:max-w-2xl mx-auto lg:px-0 md:px-0 px-5">
+        <div
+          class="min-h-[400px] rounded-3xl"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+              ),
+              url(https://i.ibb.co/Wx3MFtK/Rectangle-8.png);
+          "
+        >
+          <div class="text-neutral-content">
+            <div class="pt-28 ml-10">
+              <h1 class="mb-5 text-5xl font-bold">CMA Fest</h1>
+              <p class="mb-5">
+                Make memories that will last a lifetime. See your favorite
+                <br />
+                artists live at CMA Fest!
+              </p>
+
+              <div class="flex items-center gap-6">
+                <div
+                  class="flex bg-[#794af9] items-center gap-3 w-[130px] rounded-xl"
+                >
+                  <img
+                    class="w-4 h-4 ml-4"
+                    src="https://i.ibb.co/Z8N6rwF/Vector.png"
+                    alt=""
+                  />
+                  <span class="py-2">Get Ticket</span>
+                </div>
+
+                <button
+                  class="border border-white text-white py-2 px-4 rounded-lg"
+                >
+                  Explore All Events
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Events section -->
+      <div class="mt-16 mb-10">
+        <div class="text-center">
+          <h2 class="text-4xl font-semibold">Events</h2>
+        </div>
+
+        <div class="flex justify-center items-center gap-5 mt-5">
+          <h2>All</h2>
+          <h2>For you</h2>
+          <h2>This Day</h2>
+          <h2>This Week</h2>
+          <div class="bg-[#7f51fa] py-1 px-2 rounded-xl text-white">
+            <h2>Music</h2>
+          </div>
+          <h2>union</h2>
+        </div>
+
+        <!-- card section -->
+        <div
+          class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 max-w-6xl mx-auto mt-24 px-5"
+        >
+          <!-- 1st card -->
+          <div class="card bg-[#f0f2ff] shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://i.ibb.co/z8zgvD1/Rectangle-16.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-start text-start">
+              <div class="bg-[#7f51fa] py-1 px-3 rounded-lg text-white">
+                <h2>Music</h2>
+              </div>
+
+              <div class="flex justify-end -mt-8 gap-2">
+                <div class="flex items-center gap-2">
+                  <img src="https://i.ibb.co/jDY59Bp/Vector-1.png" alt="" />
+                  <p>Celebrity Convention Hall</p>
+                </div>
+
+                <div class="text-center bg-[#ffffff] p-3 rounded-lg">
+                  <p>Apr</p>
+                  <p class="text-[#6e38ff] text-3xl font-semibold">20</p>
+                  <p class="text-sm">10:00 PM</p>
+                </div>
+              </div>
+
+              <h2 class="-mt-10 text-[17px] font-bold">
+                ROUFIAN’S HSC-24 RAG <br />
+                DAy
+              </h2>
+
+              <div class="flex items-center gap-3">
+                <div class="card-actions">
+                  <div
+                    class="flex bg-[#794af9] items-center gap-3 w-[130px] rounded-lg"
+                  >
+                    <img
+                      class="w-4 h-4 ml-4"
+                      src="https://i.ibb.co/Z8N6rwF/Vector.png"
+                      alt=""
+                    />
+                    <span class="py-2 text-white">See Ticket</span>
+                  </div>
+                </div>
+
+                <div
+                  class="flex gap-1 items-center bg-[#ffffff] p-2 rounded-lg"
+                >
+                  <span class="text-lg font-bold text-[#591bff]">20</span>
+                  <span class="text-start"
+                    >seat <br />
+                    left</span
+                  >
+                </div>
+
+                <p class="text-[#9875ff] text-sm">See More</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd card -->
+          <div class="card bg-[#f0f2ff] shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://i.ibb.co/tpc88GH/Rectangle-16-1.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-start text-start">
+              <div class="bg-[#7f51fa] py-1 px-3 rounded-lg text-white">
+                <h2>Music</h2>
+              </div>
+
+              <div class="flex justify-end -mt-8 gap-5">
+                <div class="flex items-center gap-2">
+                  <img src="https://i.ibb.co/jDY59Bp/Vector-1.png" alt="" />
+                  <p>Celebrity Convention Hall</p>
+                </div>
+
+                <div class="text-center bg-[#ffffff] p-3 rounded-lg">
+                  <p>Apr</p>
+                  <p class="text-[#6e38ff] text-3xl font-semibold">20</p>
+                  <p class="text-sm">10:00 PM</p>
+                </div>
+              </div>
+
+              <h2 class="-mt-10 text-[17px] font-bold">
+                ROUFIAN’S HSC-24 RAG <br />
+                DAy
+              </h2>
+
+              <div class="flex items-center gap-3">
+                <div class="card-actions">
+                  <div
+                    class="flex bg-[#794af9] items-center gap-3 w-[130px] rounded-lg"
+                  >
+                    <img
+                      class="w-4 h-4 ml-4"
+                      src="https://i.ibb.co/Z8N6rwF/Vector.png"
+                      alt=""
+                    />
+                    <span class="py-2 text-white">See Ticket</span>
+                  </div>
+                </div>
+
+                <div
+                  class="flex gap-1 items-center bg-[#ffffff] p-2 rounded-lg"
+                >
+                  <span class="text-lg font-bold text-[#591bff]">20</span>
+                  <span class="text-start"
+                    >seat <br />
+                    left</span
+                  >
+                </div>
+
+                <p class="text-[#9875ff] text-sm">See More</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd card -->
+          <div class="card bg-[#f0f2ff] shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://i.ibb.co/6mjZqKj/Rectangle-16-2.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-start text-start">
+              <div class="bg-[#7f51fa] py-1 px-3 rounded-lg text-white">
+                <h2>Music</h2>
+              </div>
+
+              <div class="flex justify-end -mt-8 gap-5">
+                <div class="flex items-center gap-2">
+                  <img src="https://i.ibb.co/jDY59Bp/Vector-1.png" alt="" />
+                  <p>Celebrity Convention Hall</p>
+                </div>
+
+                <div class="text-center bg-[#ffffff] p-3 rounded-lg">
+                  <p>Apr</p>
+                  <p class="text-[#6e38ff] text-3xl font-semibold">20</p>
+                  <p class="text-sm">10:00 PM</p>
+                </div>
+              </div>
+
+              <h2 class="-mt-10 text-[17px] font-bold">
+                ROUFIAN’S HSC-24 RAG <br />
+                DAy
+              </h2>
+
+              <div class="flex items-center gap-3">
+                <div class="card-actions">
+                  <div
+                    class="flex bg-[#794af9] items-center gap-3 w-[130px] rounded-lg"
+                  >
+                    <img
+                      class="w-4 h-4 ml-4"
+                      src="https://i.ibb.co/Z8N6rwF/Vector.png"
+                      alt=""
+                    />
+                    <span class="py-2 text-white">See Ticket</span>
+                  </div>
+                </div>
+
+                <div
+                  class="flex gap-1 items-center bg-[#ffffff] p-2 rounded-lg"
+                >
+                  <span class="text-lg font-bold text-[#591bff]">20</span>
+                  <span class="text-start"
+                    >seat <br />
+                    left</span
+                  >
+                </div>
+
+                <p class="text-[#9875ff] text-sm">See More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Your Event -->
+      <div class="bg-[#7342F9] rounded-2xl max-w-6xl mx-auto mt-20">
+        <div class="lg:flex justify-between gap-20">
+          <div class="pl-10 pt-10 lg:py-20">
+            <img
+              src="https://i.ibb.co/JzbNkzc/436612813-1064998504592013-2773530455967468148-n.png"
+              alt=""
+            />
+          </div>
+          <div class="flex ml-10">
+            <div class="py-20">
+              <h1 class="text-2xl md:text-3xl font-semibold text-white">
+                Host Your Event Easily & Automatedly With Us
+              </h1>
+              <p class="mt-6 text-white text-xl md:pr-52">
+                We Provide The Best Event Ticketing & Management Solutions
+              </p>
+              <div class="mt-4 flex items-center gap-2">
+                <div class="w-5 h-5 bg-white rounded-full">✔</div>
+                <h1 class="text-white">Host Your Event With Easy Steps!</h1>
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <div class="w-5 h-5 bg-white rounded-full">✔</div>
+                <h1 class="text-white">
+                  Automated Payment System & Ticket Will Be Sent To Mail.
+                </h1>
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <div class="w-5 h-5 bg-white rounded-full">✔</div>
+                <h1 class="text-white">
+                  Access To Registration And Transaction Reports
+                </h1>
+              </div>
+              <div class="mt-4 flex items-center gap-2">
+                <div class="w-5 h-5 bg-white rounded-full">✔</div>
+                <h1 class="text-white">
+                  Send Bulk Personalized Mail With Attachments
+                </h1>
+              </div>
+            </div>
+            <div class="flex items-end">
+              <img
+                class="w-52 h-52 rounded-2xl"
+                src="https://i.ibb.co/1rSZxqF/436602538-739579171499497-5789937704841430588-n.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+
+      <!-- Automated QR Scanner -->
+      <div class="max-w-6xl mx-auto mt-20">
+        <h1 class="text-center text-3xl lg:text-5xl font-semibold">
+          Automated QR Scanner
+        </h1>
+        <p class="mt-3 text-xl lg:text-2xl text-center text-[#7342F9] lg:px-72">
+          Scan & Verify The Attendees Directly By Our QR Scanning Solution.
+        </p>
+
+        <div class="mt-10 mb-20 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-violet-100 p-10 rounded-3xl">
+            <div class="h-14 w-14 rounded-full bg-white">
+              <div class="p-4">
+                <img class="" src="https://i.ibb.co/t2CkY52/435571458-412239805004811-1782985513229415914-n.png" alt="" />
+              </div>
+            </div>
+            <h1 class="text-3xl font-bold mt-3">One Click</h1>
+            <p class="mt-1 text-gray-400">QR verification System</p>
+          </div>
+          <div class="bg-violet-100 p-10 rounded-3xl">
+            <div class="h-14 w-14 rounded-full bg-white">
+              <div class="p-4">
+                <img class="" src="https://i.ibb.co/3YpqQSZ/436279650-954425149430114-7005123764249100328-n.png" alt="" />
+              </div>
+            </div>
+            <h1 class="text-3xl font-bold mt-3">One time</h1>
+            <p class="mt-1 text-gray-400">QR Code</p>
+          </div>
+          <div class="bg-violet-100 p-10 rounded-3xl">
+            <div class="h-14 w-14 rounded-full bg-white">
+              <div class="p-4">
+                <img class="" src="https://i.ibb.co/B4325rp/435712187-1242270590515926-5808522190049204022-n.png" alt="" />
+              </div>
+            </div>
+            <h1 class="text-3xl font-bold mt-3">Easy Access</h1>
+            <p class="mt-1 text-gray-400">Lorem ispum access</p>
+          </div>
+          <div class="bg-violet-100 p-10 rounded-3xl">
+            <div class="h-14 w-14 rounded-full bg-white">
+              <div class="p-4">
+                <img class="" src="https://i.ibb.co/1fxX5Rp/436382177-1471058620150052-5952166847518290216-n.png" alt="" />
+              </div>
+            </div>
+            <h1 class="text-3xl font-bold mt-3">Mail</h1>
+            <p class="mt-1 text-gray-400">
+              Send bulk personalized mail with attachments
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIMPLIFY TICKETING section -->
+      <div class="mt-28 mb-28 px-5">
+        <h2 class="text-center text-3xl font-semibold">SIMPLIFY TICKETING</h2>
+        <div
+          class="text-center max-w-6xl mx-auto rounded-3xl"
+          style="background-image: linear-gradient(to top, #ebe3fe, white)"
+        >
+          <p class="py-3 text-[#b195fc]">
+            First Ever Unique QR Ticketing <br />
+            Platform For Event Registration & Booking
+          </p>
+
+          <span
+            class="flex items-center gap-3 bg-[#8255fa] w-[235px] mx-auto py-2 text-white px-5 rounded-lg"
+          >
+            <span
+              ><img
+                class="w-5 h-5"
+                src="https://i.ibb.co/XY7BGkB/Vector-2.png"
+                alt=""
+            /></span>
+            <span>Secure Payment with</span>
+          </span>
+
+          <div class="text-center md:-mt-40">
+            <img
+              class=""
+              src="https://i.ibb.co/8bZLGCx/Mask-group.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="bg-blue-700 mt-20">
+        <footer
+          class="max-w-6xl mx-auto text-center md:text-left text-neutral-content md:px-4 lg:px-0"
+        >
+          <div
+            class="grid justify-center md:ml-36 lg:ml-0 md:justify-between md:grid-cols-2 lg:grid-cols-4 py-10 text-neutral-content"
+          >
+            <nav class="grid mt-2">
+              <h6 class="text-2xl">
+                Event<span class="text-2xl font-bold">Host</span>
+              </h6>
+              <p class="mt-3">IDEA Project, ICT Tower (0th Floor),</p>
+              <p>Plot: E-14X, Agargaon, Dhaka - 1207</p>
+              <p>02222-222222, 01111111111</p>
+            </nav>
+            <nav class="grid mt-2">
+              <h6 class="link link-hover">Home</h6>
+              <a class="link link-hover">Events</a>
+              <a class="link link-hover">About Us</a>
+              <a class="link link-hover">Contact</a>
+            </nav>
+            <nav class="grid mt-2">
+              <h6 class="link link-hover">Event Dashboard</h6>
+              <a class="link link-hover">Terms & Condition</a>
+              <a class="link link-hover">Privacy & Refund Policy</a>
+            </nav>
+            <nav class="mt-2">
+              <h6 class="footer-title">Follow Us</h6>
+              <div class="flex items-center gap-4">
+                <a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                    ></path></svg
+                ></a>
+                <a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    ></path></svg
+                ></a>
+                <a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    ></path></svg
+                ></a>
+              </div>
+            </nav>
+          </div>
+
+          <hr class="" />
+          <div
+            class="md:flex grid-cols-3 justify-between items-center mt-4 pb-10"
+          >
+            <div class="flex justify-center items-center gap-4">
+              <p>Pay with</p>
+              <img class="w-10" src="https://i.ibb.co/z6py2qm/435815531-1867901426973281-7512119608295712218-n.png" alt="" />
+              <img class="w-6" src="https://i.ibb.co/8g6Df27/436522464-1154142105899805-8367249697870517634-n.png" alt="" />
+              <img
+                class="w-6"
+                src="https://i.ibb.co/pydHWCP/436274535-970424364712849-6348692902367458094-n.png"
+                alt=""
+              />
+            </div>
+            <p class="my-3 md:my-0">
+              ©2023 TickHost & UVTR. All right reserved
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
